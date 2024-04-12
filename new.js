@@ -31,9 +31,15 @@ function displayData(data) {
             <div class="type">
                 <p><strong>Type:</strong> ${product.product_type}</p>
             </div>
-            <button class="add-to-cart">Add to cart</button>
+            <form>
+            <label for="marks">Enter number of items (between 0 and 100):</label>
+            <input type="number" id="marks" name="marks" min="0" max="100">
+            <button type="button" onclick="calculateGrade()" class="add-to-cart" >Add to cart</button>
+          </form>
+          <p id="items"></p>
            
-        </div>`;
+        </div>
+       `;
         ProductsContainer.insertAdjacentHTML('beforeend', content);
     });
 }
@@ -115,7 +121,7 @@ ProductsContainer.addEventListener('click', function (event) {
 
 // Function to update the UI to display items in the cart and calculate total price
 function updateCartUI() {
-    const cartContainer = document.querySelector('.cart-container');
+    const cartContainer = document.querySelector('.products-container');
     cartContainer.innerHTML = ''; // Clear previous content
     
     let totalPrice = 0;

@@ -41,8 +41,12 @@
             <div class="type">
                 <p><strong>type:</strong></p>
             </div>
-            <button class="add-to-cart">Add to cart</button>
-      
+            <form>
+                <label for="marks">Enter number of items (between 0 and 100):</label>
+                <input type="number" id="marks" name="marks" min="0" max="100">
+                <button type="button" onclick="calculateGrade()" class="add-to-cart" >Add to cart</button>
+              </form>
+              <p id="items"></p>
 
         </div>
         <script src="new.js"></script>
