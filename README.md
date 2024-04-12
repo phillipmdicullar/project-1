@@ -40,6 +40,7 @@ cd makeup-products-store
 Open the index.html file in your web browser.
 Usage
 Upon opening the webpage, you will see a list of makeup products from the Maybelline brand.
+We have a function that you can toggle the  button to add amount of itms to cart
 Click on the "Add to cart" button to add a product to your cart.
 Use the "Toggle Dark Mode" button to switch between light and dark mode.
 Use the "Increase Text Size" and "Decrease Text Size" buttons to adjust the text size on the page.
