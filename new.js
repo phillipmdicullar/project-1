@@ -31,18 +31,19 @@ function displayData(data) {
             <div class="type">
                 <p><strong>Type:</strong> ${product.product_type}</p>
             </div>
-            <form>
-            <label for="marks">Enter number of items (between 0 and 100):</label>
-            <input type="number" id="marks" name="marks" min="0" max="100">
-            <button type="button" onclick="calculateGrade()" class="add-to-cart" >Add to cart</button>
-          </form>
-          <p id="items"></p>
+            <form id="add-to-cart-form">
+            <label for="quantity">Enter quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+            <button class="purchase-btn" type="submit">Add to Cart</button>
+        </form>
+        <p>Remaining items in store: <span id="remaining-items">10</span></p>
            
         </div>
        `;
         ProductsContainer.insertAdjacentHTML('beforeend', content);
     });
 }
+// Function to calculate and update the number of items in the cart
 
 // Event listener for clicking on product name
 ProductsContainer.addEventListener('click', function (event) {
@@ -51,6 +52,7 @@ ProductsContainer.addEventListener('click', function (event) {
         console.log(`Clicked on product name: ${target.textContent}`);
     }
 });
+
 
 // Event listener for hovering over product image
 ProductsContainer.addEventListener('mouseover', function (event) {
@@ -84,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const darkModeButton = document.querySelector('#dark-mode-toggle');
     darkModeButton.addEventListener('click', toggleDarkMode);
 });
+
 // Function to increase text size
 function increaseTextSize() {
     const currentSize = parseInt(window.getComputedStyle(document.body).fontSize);

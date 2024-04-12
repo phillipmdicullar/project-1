@@ -46,7 +46,7 @@ We have a function that you can toggle the  button to add amount of itms to cart
 Click on the "Add to cart" button to add a product to your cart.
 Use the "Toggle Dark Mode" button to switch between light and dark mode.
 Use the "Increase Text Size" and "Decrease Text Size" buttons to adjust the text size on the page.
-Contributing
+## Contributing
 Contributions are welcome! If you have any ideas for new features or find any issues, feel free to open an issue or submit a pull request.
 
 ## License
