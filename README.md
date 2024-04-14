@@ -1,54 +1,33 @@
 ## Date
-12/4/2024 Fri Apr 12 2024
-## Author
+Sun Apr 14 2024 TIME:11
+## Author 
 Philip Emdokolo
-## Makeup Products Store
-This is a simple web application that displays makeup products from the Maybelline brand and allows users to add them to their cart.
-
-## Table of Contents
-Introduction
-Features
-Technologies Used
-Installation
-Usage
-Contributing
-License
-Introduction
-This project fetches makeup products data from the Makeup API and displays them on a web page. Users can view product details such as name, price, category, and type. They can also add products to their cart and view the total price.
+## Branches
+I have two branch new and main, in main u can see my first design, in the new is where we get our hands dirty, the design is short and well implemented
+## Maybelline Makeup Store
+This is a simple web application that displays Maybelline makeup products fetched from the Makeup API. Users can view the available products, add them to the cart, and see the total price of the items in the cart.
 
 ## Features
-Display makeup products from the Maybelline brand usng its api.
-View product details including name, price, category, and type.
-Add products to the cart.
-Toggle dark mode.
-Increase or decrease text size.
-Technologies Used
+Display Maybelline makeup products with details such as name, price, category, and product type.
+Add products to the cart by specifying the quantity.
+View the total price of items in the cart.
+Dark mode toggle for enhanced user experience.
+Adjustable text size for improved readability.
+## Technologies Used
 HTML
 CSS
 JavaScript
-Fetch API
-Makeup API
-Installation
-To run this project locally, follow these steps:
-
-## Clone the repository:
-bash
-Copy code
-git clone https://github.com/phillipmdicullar/project-1
-Navigate to the project directory:
-bash
-Copy code
-cd makeup-products-store
+## Setup Instructions
+Clone the repository to your local machine.
 Open the index.html file in your web browser.
 Usage
-Upon opening the webpage, you will see a list of makeup products from the Maybelline brand.
-We have a function that you can toggle the  button to add amount of itms to cart
-Click on the "Add to cart" button to add a product to your cart.
-Use the "Toggle Dark Mode" button to switch between light and dark mode.
-Use the "Increase Text Size" and "Decrease Text Size" buttons to adjust the text size on the page.
-## Contributing
-Contributions are welcome! If you have any ideas for new features or find any issues, feel free to open an issue or submit a pull request.
-
+Browse through the list of Maybelline makeup products displayed on the homepage.
+Click on the "Add to Cart" button to add a product to your shopping cart.
+Specify the quantity of each product before adding it to the cart.
+View the total price of items added to the cart at the bottom of the page.
+Use the dark mode toggle and text size adjustment buttons for a personalized experience.
+## Credits
+Product data fetched from the Makeup API.
+Icons provided by Font Awesome.
 ## License
-This project is licensed under the MIT License.
-
+This project is licensed under the MIT License - see the LICENSE file for details.
